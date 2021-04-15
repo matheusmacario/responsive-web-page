@@ -9,4 +9,12 @@
  
  <br>
  
+ ![screenshot_web](https://github.com/matheusmacario/responsive-web-page/blob/main/assets/images/screenshot-web.JPG)
  
+<br>
+
+![screenshot_mobile](https://github.com/matheusmacario/responsive-web-page/blob/main/assets/images/screenshot-mobile.JPG)
+
+<br>
+
+![screenshot_burger](https://github.com/matheusmacario/responsive-web-page/blob/main/assets/images/screenshot-burger.JPG)
