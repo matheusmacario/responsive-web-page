@@ -193,7 +193,7 @@ header ul li a.active, header ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: a.2s ease-in-out;
+    transition: a.3s ease-in-out;
     opacity: 0;
     animation: slide_right 0.8s linear forwards;
     animation-delay: calc(0.25s * var(--i)); 
