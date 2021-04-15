@@ -15,6 +15,7 @@ section{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow-x: hidden;
 }
 
 header{
@@ -38,8 +39,24 @@ header .logo{
     text-decoration: none;
     font-weight: 1000;
     letter-spacing: 2px;
-    font
+    opacity: 0;
+    animation: slide_left 0.5s linear forwards;
+    animation-delay: 0.2s;
 }
+
+@keyframes slide_left{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 
 header ul {
     position: relative;
@@ -59,6 +76,21 @@ header ul li a {
     padding: 8px 18px;
     user-select: none;
     text-decoration: none;
+    opacity: 0;
+    animation: slide_bottom 0.5s linear forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+@keyframes slide_bottom{
+    0%
+    {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 header ul li a.active, header ul li a:hover {
@@ -82,11 +114,30 @@ header ul li a.active, header ul li a:hover {
     margin-bottom: 10px;
     line-height: 1.2em;
     font-weight: 700;
+    opacity: 0;
+    animation: slide_right 0.8s linear forwards;
+    animation-delay: 0.5s;  
+}
+
+@keyframes slide_right{
+0%
+{
+    transform: translateX(100px);
+    opacity: 0;
+}
+100%
+{
+    transform: translateX(0px);
+    opacity: 1;
+}
 }
 
 .content .textBox p {
     font-size: 1.2em;
     color: #333;
+    opacity: 0;
+    animation: slide_left 0.8s linear forwards;
+    animation-delay: 1s;  
 
 }
 
@@ -101,7 +152,22 @@ header ul li a.active, header ul li a:hover {
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 1px;
+    opacity: 0;
+    animation: slide_top 0.8s linear forwards;
+    animation-delay: 1s; 
+}
 
+@keyframes slide_top{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .icon {
@@ -128,7 +194,12 @@ header ul li a.active, header ul li a:hover {
     justify-content: center;
     align-items: center;
     transition: a.2s ease-in-out;
+    opacity: 0;
+    animation: slide_right 0.8s linear forwards;
+    animation-delay: calc(0.25s * var(--i)); 
+    
 }
+    
 
 .icon li a img {
     filter:invert(1);
@@ -145,6 +216,18 @@ header ul li a.active, header ul li a:hover {
     bottom: 0;
     right: 0;
     max-width: 700px;
+    opacity: 0;
+    animation: fade_in 1s linear forwards;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+}
+@keyframes fade_in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /*responsive part */
@@ -218,6 +301,6 @@ header ul li a.active, header ul li a:hover {
 
 @media (max-width: 600px){
     .mosque {
-        opacity: 0.4;
+        opacity: 0.5;
     }
 }
