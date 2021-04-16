@@ -5,6 +5,12 @@
  
  <br>
  
+ ### How it is
+ 
+ <br>
+ 
+ ![gif](https://github.com/matheusmacario/responsive-web-page/blob/main/responsive_webpage.gif)
+ 
  ### Some screenshots of the web page
  
  <br>
